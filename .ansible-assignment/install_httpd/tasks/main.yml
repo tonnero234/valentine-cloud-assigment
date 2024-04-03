@@ -1,0 +1,27 @@
+---
+# tasks file for install-httpd
+ - name: install httpd
+   yum:
+     name: httpd
+     state: latest
+   when: ansible_os_family == 'RedHat'
+ - name: start httpd
+   service:
+     name: httpd
+     state: started
+     enabled: true 
+   when: ansible_os_family == 'RedHat'
+ - name: restart httpd
+   service:
+     name: httpd
+     state: restarted
+   when: ansible_os_family == 'RedHat'
+
+ - name: copy files
+   ansible.builtin.copy:
+     src: /home/vagrant/.ansible/wp-assignment-altschoolafrica/
+     dest: /var/www/html/
+     owner: root
+     group: root
+     mode: '0644'
+   when: ansible_os_family == 'RedHat'

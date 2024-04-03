@@ -1,0 +1,8 @@
+---
+ - name: copy files
+   ansible.builtin.copy:
+     src: /home/vagrant/.ansible/FIGMA_ALTSCHOOL_AFRICA_assignment_3/
+     dest: /var/www/html/
+     owner: root
+     group: root
+     mode: '0644'

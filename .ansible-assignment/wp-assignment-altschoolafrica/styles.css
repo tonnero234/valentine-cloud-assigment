@@ -1,0 +1,136 @@
+.body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: rgba(29, 44, 60, 1);
+}
+
+.page-container{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+
+.wp-pusher-logo{
+    width: 250px;
+    height: 40px;
+}
+.nav-div{
+    font-size: 25px;
+    color: black;
+    
+    }
+
+    #Account-btn{
+        height: 30px;
+    }
+.fname-tag{
+   margin-right: 10px; 
+}
+.nav-bar{
+    text-align: right;
+    color: black;
+    width: 476px;
+    height: 40px;
+    float: right;
+    margin-top: 20px;
+}
+a:link{
+    text-decoration: none;
+}
+
+.form-container{
+width: 50%; height: 90%; background: white; box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.05); border-radius: 6px;
+margin-left: 100px;
+padding: 50px 50px 50px 50px;
+}
+
+.right-container{
+    background: #1179BF; border-top-left-radius: 6px; border-top-right-radius: 6px;
+    width: 50%; height: 90%; float: right;
+    margin-right: 200px;
+    margin-bottom: 50px;
+    padding:  50px 50px 50px 50px;
+    color: white;
+}
+#sup{
+    font-size: 24px;
+}
+#sub{
+    font-size: 50px;
+}
+#switch-p{
+    text-decoration: underline ;
+}
+.kirk-img{
+    display: flex
+}
+.kirk-name{
+    margin-left: 5px;
+}
+.first-p{
+   font-style: italic;
+}
+.submit-btn{
+display: flex;
+flex-direction: row;
+}
+
+.payment-section{
+    display: flex;
+    flex-direction: column;
+    
+}
+.Basic-information{
+    display: flex;
+}
+.mail-tag{
+    display: flex;
+    flex-direction: column;
+}
+.payment-information{
+    p{
+        font-weight: bold;
+        margin-left: 30px;
+    }
+}
+#basic-info{
+    font-weight: bold;
+    margin-left: 30px;
+};
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.oval-image-1 {
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    background: whitesmoke;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: -35px;
+  }
+
+  .oval-image-2 {
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    background: whitesmoke;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: -35px;
+  }
+
+  .form-container input{
+    height: 36px;
+  }
+
+  .swipe-log{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }

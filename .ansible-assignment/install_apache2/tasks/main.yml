@@ -1,0 +1,29 @@
+---
+# tasks file for install-apache2
+ - name: install Apache2
+   apt:
+     name: apache2
+     state: latest
+   when: ansible_os_family == 'Debian'
+ - name: start Apache2
+   service:
+     name: apache2
+     state: started
+     enabled: true 
+   when: ansible_os_family == 'Debian'
+ - name: restart Apache2
+   service:
+     name: apache2
+     state: restarted
+   when: ansible_os_family == 'Debian'
+
+ - name: copy files
+   ansible.builtin.copy:
+     src: /home/vagrant/.ansible/FIGMA_ALTSCHOOL_AFRICA_assignment_3/
+     dest: /var/www/html/
+     owner: root
+     group: root
+     mode: '0644'
+
+   when: ansible_os_family == 'Debian'
+      

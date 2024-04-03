@@ -1,0 +1,168 @@
+.body{
+width: 100%; height: 100%; opacity: 0.04; background-color: #2EC4B6 !important;
+margin: 0;
+padding: 0;
+}
+
+.header-paragraph{
+	color: #737373; font-size: 16px; font-family: Brown; font-weight: 400; line-height: 25px; word-wrap: break-word;
+	align-items: center;
+	justify-content: center;
+	align-items: center;
+}
+
+.main{
+        display: flex;
+        background-color: aliceblue;
+		justify-content: center;
+		align-items: center;
+		height: 100vh;
+    }
+
+.form-table{
+	background: white; box-shadow: 0px 4px 50px rgba(3.59, 8.13, 19.13, 0.10); border-radius: 6px;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin-left: 20px;
+	margin-right: 70px;
+	display: flex;
+	margin-top: -200px;
+}
+.header{
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	margin-top: 300px;
+}
+.header-paragraph{
+	word-wrap: break-word;
+	width: 70%;
+	height: 50%;	
+}
+
+.name-section{
+    display: flex;
+	margin-bottom: 1rem;
+	
+}
+.fname{
+	margin-right: 30px;
+}
+.kg{
+	margin-right: 30px;
+}
+
+.sex{margin-right: 30px;
+}
+.Dob{
+	margin-left: -10px;
+}
+
+.lname{
+	float: left;
+}
+.cm{float: left;}
+
+.Dob{
+	float: left;
+}
+
+.weight-section{
+    display: flex;
+	margin-bottom: 1rem;
+}
+.activity-section{
+	display: flex;
+	margin-bottom: 1rem;
+}
+
+.register-section{
+background-color: aqua;    
+width: 100%;
+}
+
+.second-line{
+    display: flex;
+	margin-bottom: 1rem;
+}
+
+.password-section{
+	margin-bottom: 1rem;
+}
+
+  .form-table input, select, button { 
+	height: 48px;
+	width: 98%;
+  }
+
+  .form-table select{
+	width: 100% !important;
+  }
+  .form-table .sex{
+	width: 48%;
+  }
+  .form-table .Dob{
+	width: 48%;
+  }
+
+
+
+
+
+/*--mobile-768px-responsiveness--*/ 
+@media screen and (max-width: 768px) {
+	.main{
+		flex-direction: row;
+		flex-wrap: wrap;
+		width: 100%;
+		
+	}
+	.form-table{
+		margin-top: 0;
+		.name-section{
+			display:inline-block;
+		}
+.second-line{
+	display: grid;
+}
+.weight-section{
+	display: grid;
+}
+
+		
+	}
+
+	.name-section{
+		width: 100% !important;
+	}
+	.kg{
+		width: 100% !important;
+	}
+	.fname{
+		width: 100% !important;
+	}
+	.lname{
+		width: 100%;
+	}
+	.sex{
+		width: 100% !important;
+	}
+	.Dob{
+		width: 100% !important;
+		margin-left: 0;
+	}
+
+	.header{
+		margin-bottom:-250px;
+		display: inline-block;
+		margin-top:50px;
+		.header-paragraph{
+			display: contents;
+			flex-wrap: wrap;
+			align-items: center;
+		}
+	}
+	
+}
